@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: var(--bgBody);
+    background: linear-gradient(45deg, #001a5d, #000000);
     color: #fff;
     font-size: calc(var(--txt-size) - 10px);
     font-family: sans-serif;
@@ -50,12 +50,11 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    border: 50px;
+    border-radius: 50px;
 }
 
 .hour{
-    background-color: linear-gradient
-    (0deg,
+    background: linear-gradient(0deg,
     rgba(94, 94, 85,0)0%,
     rgba(38, 109,124,0)60%,
     rgb(245,238,238)90%);
@@ -64,8 +63,7 @@ body{
 }
 
 .min{
-    background-color: linear-gradient
-    (0deg,
+    background: linear-gradient(0deg,
     rgba(0,0,0,0)60%,
     rgb(125,125,224)100%);
     width: 3%;
@@ -73,8 +71,7 @@ body{
 }
 
 .sec{
-    background-color: linear-gradient
-    (0deg,
+    background: linear-gradient(0deg,
     rgba(94,94,85,0)0%,
     rgba(38,109,124,0)32%,
     rgb(255,0,0)100%);
@@ -139,12 +136,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 166, 0.9);
 }
 
 .show-num{
     position: absolute;
     font-size: 1em;
     height: 1em;
+    z-index: 1000;
 }
 
 .show-num:nth-child(1){
@@ -181,11 +181,11 @@ body{
 }
 
 .show-sec:nth-child(1){
-    transform: rotate(8deg) translateY(var(--indicatorDis));
+    transform: rotate(7deg) translateY(var(--indicatorDis));
 }
 
 .show-sec:nth-child(2){
-    transform: rotate(306deg) translateY(var(--indicatorDis));
+    transform: rotate(12deg) translateY(var(--indicatorDis));
 }
 
 .show-sec:nth-child(3){
